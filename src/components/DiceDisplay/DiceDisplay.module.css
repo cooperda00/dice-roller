@@ -1,0 +1,17 @@
+.display {
+  align-self: center;
+  display: grid;
+  grid-area: display;
+  grid-template-columns: auto auto;
+  justify-items: center;
+  justify-self: center;
+  width: 75%;
+  height: 35vh;
+}
+
+/* Specific Mobile */
+@media only screen and (max-height: 823px) {
+  .display {
+    margin: -4rem;
+  }
+}

@@ -1,0 +1,23 @@
+.total {
+  grid-area: total;
+  font-size: 2rem;
+  margin: -3rem 0;
+}
+
+.tot {
+  color: darkred;
+}
+
+/* Small Tablet */
+@media only screen and (min-width: 768px) {
+  .total {
+    font-size: 4rem;
+  }
+}
+
+/* Large Tablet */
+@media only screen and (min-width: 1024px) {
+  .total {
+    font-size: 6rem;
+  }
+}

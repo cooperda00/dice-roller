@@ -1,0 +1,51 @@
+.btnContainer {
+  display: flex;
+  grid-area: btn;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 5vh;
+}
+
+.btn {
+  background: transparent;
+  border: 2px solid rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 700;
+  outline: none;
+  padding: 15px;
+  position: absolute;
+  width: 200px;
+}
+
+.btn:hover {
+  border: 3px solid rgba(0, 0, 0, 1);
+}
+
+/* Specific Mobile */
+@media only screen and (max-height: 736px) {
+  .btn {
+    padding: 5px;
+  }
+}
+
+/* Small Tablet */
+@media only screen and (min-width: 768px) {
+  .btnContainer {
+    height: 10vh;
+  }
+  .btn {
+    margin-top: -4rem;
+    font-size: 4rem;
+  }
+}
+
+/* Large Tablet */
+@media only screen and (min-width: 1024px) {
+  .btn {
+    font-size: 6rem;
+    width: 300px;
+  }
+}

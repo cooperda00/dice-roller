@@ -1,0 +1,81 @@
+.selector {
+  align-items: center;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  grid-area: selector;
+  height: 20vh;
+  justify-content: center;
+  margin-bottom: -2rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.input {
+  border-radius: 50%;
+  font-size: 1.5rem;
+  height: 70px;
+  margin-top: 1rem;
+  outline: none;
+  padding: 5px 5px 5px 13px;
+  text-align: center;
+  text-align-last: center;
+  transition: 1s;
+  width: 70px;
+}
+
+.input:hover {
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  border-radius: 0%;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+/* Specific Mobile */
+@media only screen and (max-height: 736px) {
+  .selector {
+    margin-top: -1rem;
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-height: 823px) {
+  .selector {
+    height: 25vh;
+  }
+}
+
+/* Small Tablet */
+@media only screen and (min-width: 768px) {
+  .title {
+    font-size: 3rem;
+  }
+
+  .selector {
+    height: 35vh;
+    padding: 0;
+    width: 95%;
+  }
+
+  .input {
+    font-size: 2rem;
+    height: 80px;
+    width: 80px;
+  }
+}
+
+/* Large Tablet */
+@media only screen and (min-width: 1024px) {
+  .title {
+    font-size: 4rem;
+  }
+
+  .input {
+    font-size: 3rem;
+    height: 100px;
+    width: 100px;
+  }
+}
